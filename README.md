@@ -1,5 +1,9 @@
 #mateCarousel
-*mateCarousel* is a lightweight carousel with a simple API. There is no default theme, which means the css part is up to you. And that's a good thing!
+*mateCarousel* is a lightweight carousel with a simple API. It transform class element into slides and give you the control of it, using a config object and some API commands to use on the go.
+
+With this carousel, you can set autoplay, configure buttons, bullet-menu to chose between slides and a lot more. The way this API was developed let you chose from using the built-in solutions or handle the situations by yourself.
+
+Oh! There is no default theme, which means the css part is up to you. And that's a good thing!
 
 ##Concept
 The general idea is to make an easy to config carousel. All the logic part is done, so you just have to make it beautiful.
