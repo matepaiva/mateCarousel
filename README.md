@@ -7,18 +7,32 @@ The general idea is to make an easy to config carousel. All the logic part is do
 ##How does it work?
 *mateCarousel* iterates over elements of a DOM class. Once you call the library passing the class as an argument, we organize your carousel and leave it ready to shine! To make it, we use the translateX property. First element will have its value as 0%, second one as 100%, third one as 200% and so on.
 
-For example, you can organize it as an carousel:
+For example, this code:
 ``` html
 <div>
-  <div class="inner"></div>
-  <div class="inner"></div>
-  <div class="inner"></div>
-  <div class="inner"></div>
+  <div class="inner red"></div>
+  <div class="inner black"></div>
+  <div class="inner yellow"></div>
+  <div class="inner blue"></div>
 </div>
 ```
-You just have to call the mateCarousel passing "inner" as argument:
+When you pass "inner" as an argument to mateCarousel...
 ``` javascript
+var config = {
+  autoplay: true,
+  autoplaySpeed: 3500,
+}
+
 var carousel = mateCarousel ('inner');
+```
+... it will become that:
+``` html
+<div>
+<div class="inner red" style="transform: translateX(0%);"></div>
+  <div class="inner black" style="transform: translateX(100%);"></div>
+  <div class="inner yellow" style="transform: translateX(200%);"></div>
+  <div class="inner blue" style="transform: translateX(300%);"></div>
+</div>
 ```
 
 ##The config object
