@@ -28,7 +28,7 @@ var carousel = mateCarousel ('inner');
 ... it will become that:
 ``` html
 <div>
-<div class="inner red" style="transform: translateX(0%);"></div>
+  <div class="inner red" style="transform: translateX(0%);"></div>
   <div class="inner black" style="transform: translateX(100%);"></div>
   <div class="inner yellow" style="transform: translateX(200%);"></div>
   <div class="inner blue" style="transform: translateX(300%);"></div>
