@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>mateCarousel</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <h1>mateCarousel</h1>
+    <span class="slogan">we handle the ugly and let the beautiful part to you!</span>
    <div id="container">
        <div class="inner red"></div>
        <div class="inner black"></div>
@@ -13,7 +15,14 @@
        <div class="inner blue"></div>
    </div>
    
-   <script src="mateCarousel.min.js"></script>
+   <button onclick="carousel.removeMenu()">carousel.removeMenu()</button>
+    <button onclick="carousel.lateCreateMenu('dot','menuContainer')">carousel.lateCreateMenu("dot","menuContainer")</button>
+    <button onclick="carousel.pause()">carousel.pause()</button>
+    <button onclick="carousel.play(1000)">carousel.play(1000)</button>
+    
+    <span>Read the documentation and get to know all the features of mateCarousel: <a href="http://github.com/matepaiva/mateCarousel">http://github.com/matepaiva/mateCarousel</a></span>
+   
+   <script src="mateCarousel.js"></script>
    <script src="index.js"></script>
 </body>
 </html>

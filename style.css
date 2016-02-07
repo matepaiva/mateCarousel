@@ -5,10 +5,11 @@ body{
 }
 
 #container {
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     position: relative;
-    overflow: hidden;  
+    overflow: hidden;
+    margin: auto;
 }
 
 .inner {
@@ -34,33 +35,42 @@ body{
     background-color: blue;
 }
 
-#dot-container {
+#menuContainer {
     position: absolute;
     color: white;
-    left: 0;
     bottom: 0;
     z-index: 10;
+    margin:0;
+    padding: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .dot{
     display: inline-block;
+    text-align: center;
+    padding-right: 10px;
+    font-size: 35px;
+}
+.dot:hover{
+    cursor: pointer;
 }
 .active{
-    font-weight: bolder;
+    font-weight: bold;
+    color: lightgreen;
 }
 
 #buttonBefore, #buttonAfter{
     position: absolute;
     color: white;
     top: 50%;
+    transform: translateY(-50%);
     z-index: 10;
     background: transparent;
     border: 0;
+    font-size: 35px;
 }
-
-#buttonBefore {
-    left: 0;
-}
-
-#buttonAfter {
-    right: 0;
+#buttonBefore {left: 0;}
+#buttonAfter {right: 0;}
+#buttonBefore:hover, #buttonAfter:hover{
+    color: lightgreen;
 }
