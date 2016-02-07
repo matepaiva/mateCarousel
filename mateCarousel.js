@@ -70,7 +70,7 @@ var mateCarousel = function (innerClass, objConfig) {
             node.classList.add(config.bulletMenuClass);
             node.dataset.index = i;
             node.onclick = function(){
-                setPos(this.dataset.index);
+                setPos(parseInt(this.dataset.index));
             };
             menuContainer.appendChild(node);
         }
